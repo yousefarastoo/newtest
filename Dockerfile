@@ -13,4 +13,4 @@ CMD python manage.py makemigrations --noinput && \
 python manage.py migrate --noinput && \
 python manage.py collectstatic --noinput && \
 python manage.py createsuperuser --noinput --user admin --email yousef@yousef.com ;\
-gunicorn -b 127.0.0.1:8000 config.wsgi
+gunicorn -b 0.0.0.0:8000 config.wsgi
